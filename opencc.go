@@ -21,7 +21,7 @@ var (
 var defaultDir string
 
 func DefaultDir() string {
-	if defaultDir == `` {
+	if defaultDir != `` {
 		return defaultDir
 	}
 	if runtime.GOOS == "windows" {
